@@ -1,0 +1,30 @@
+.registration-form {
+  background-color: pink;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.field {
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.actions{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.visited {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  color: #ffffff;
+}

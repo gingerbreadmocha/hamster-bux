@@ -1,7 +1,8 @@
-<h1 align="center" style="color: white; margin-top: 80px; margin-bottom: 300px">WELCOME, HAMSTER.</h1>
+<h1 align="center" style="color: white; margin-top: 80px; margin-bottom: 250px">WELCOME, HAMSTER.</h1>
 
 <div class="button-container">
-  <button type="button" class="welcome-button btn btn-info btn-lg">register</button>
-  <button type="button" class="welcome-button btn btn-warning btn-lg">login</button>
+  <%= link_to 'register', new_user_registration_path, class: 'welcome-button btn btn-primary btn-lg' %>
+  <%= link_to 'login', new_user_session_path, class: 'welcome-button btn btn-secondary btn-lg' %>
 </div>
 
+<%= image_tag "hamster.gif" %>

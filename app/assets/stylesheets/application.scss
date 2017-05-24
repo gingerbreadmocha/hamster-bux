@@ -16,4 +16,8 @@
 //bootstrap is now imported in every file in this project
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "navbar";
 @import "welcome";
+@import "register";
+@import "font-awesome";
+@import "login";

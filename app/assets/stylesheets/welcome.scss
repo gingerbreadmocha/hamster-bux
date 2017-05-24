@@ -13,10 +13,31 @@ body{
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .welcome-button{
   margin: 20px;
   flex-grow: 1;
+}
 
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.visited {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  color: #ffffff;
+}
+
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.visited {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  color: #ffffff;
 }
