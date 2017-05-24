@@ -1,2 +1,8 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1 align="center" style="color: white; margin-top: 80px; margin-bottom: 250px">WELCOME, HAMSTER.</h1>
+
+<div class="button-container">
+  <%= link_to 'register', new_user_registration_path, class: 'welcome-button btn btn-primary btn-lg' %>
+  <%= link_to 'login', new_user_session_path, class: 'welcome-button btn btn-secondary btn-lg' %>
+</div>
+
+<%= image_tag "hamster.gif" %>
