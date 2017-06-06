@@ -1,0 +1,12 @@
+<div class="greetings">
+  <h1>Greetings!!!</h1>
+  <h2>こんにちは !</h2>
+  <h2>안녕하세요 !</h2>
+  <div><h2>Balance: <%= current_user.hamsterbux %> <%= image_tag 'seed.png', size: '25' %></h2></div>
+</div>
+
+<div class="button-container">
+  <%= link_to 'Shop', shop_index_path, class: 'shop-button btn btn-primary btn-lg' %>
+  <button type="button" class="btn btn-secondary btn-lg">Earn Hamsterbux</button>
+</div>
+

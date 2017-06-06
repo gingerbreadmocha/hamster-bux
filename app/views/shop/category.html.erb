@@ -1,0 +1,21 @@
+<div class="title"><h1><%= @category.name %></h1></div>
+<div>
+  <div class="container">
+    <% @items.each do |item| %>
+        <div class="item-container">
+          <div style="margin-top:10px" ;><b><%= item.name %></b></div>
+          <div style="width: 100px; height: 100px; margin: 10px;"><%= image_tag item.picture, style: 'max-height: 100%; max-width: 100%' %></div>
+          <div style="margin-bottom: 10px; display: flex;  ">
+            price: <%= item.price %><%= image_tag 'seed.png', size: '25', style: "margin-left: 10px;" %></div>
+          <button type="button" class="btn btn-warning" style="margin-bottom: 10px">Buy</button>
+          <button type="button" class="btn btn-danger" style="margin-bottom:10px;">Add to wish list</button>
+        </div>
+    <% end %>
+
+  </div>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <div>
+  <%= link_to 'back', shop_index_path, class: 'welcome-button btn btn-primary btn-lg', style: 'justify-content: center;' %>
+    </div>
+  </div>
+</div>

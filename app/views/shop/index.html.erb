@@ -1,0 +1,10 @@
+<div class = "title"><h1>Welcome to the Hamster Shop!~</h1></div>
+
+<div class="container">
+
+  <% @categories.each do |category|%>
+      <%= link_to category_show_path category.name do %>
+        <div class="category-container" ><div><b><%= category.name %></b></div></div>
+      <% end %>
+  <% end %>
+</div>
