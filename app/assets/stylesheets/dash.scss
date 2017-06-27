@@ -1,7 +1,27 @@
 // Place all the styles related to the dash controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.main-stuff{
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.transaction-form {
+  background-color: pink;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
+.teeburu{
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  color: white;
+}
 
 .greetings{
   color: white;
