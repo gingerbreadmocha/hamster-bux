@@ -1,12 +1,38 @@
 <div class="greetings">
   <h1>Greetings!!!</h1>
   <h2>こんにちは !</h2>
-  <h2>안녕하세요 !</h2>
+  <h2>你好 !</h2>
   <div><h2>Balance: <%= current_user.hamsterbux %> <%= image_tag 'seed.png', size: '25' %></h2></div>
+  <h2>Recent Transactions: </h2>
+  <h4>
+    <div class="teeburu">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @transaction.each do |transaction| %>
+            <tr style="text-align:left;">
+              <td><%= transaction.created_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
+              <td><%= transaction.amount %></td>
+              <td><%= transaction.description %></td>
+            </tr>
+        <% end %>
+        </tbody>
+
+      </table>
+    </div>
+  </h4>
 </div>
 
 <div class="button-container">
   <%= link_to 'Shop', shop_index_path, class: 'shop-button btn btn-primary btn-lg' %>
   <button type="button" class="btn btn-secondary btn-lg">Earn Hamsterbux</button>
+  <%= link_to 'Gift', dash_send_transaction_path, class: 'gift-button btn btn-primary btn-lg' %>
 </div>
 

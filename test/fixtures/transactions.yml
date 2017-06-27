@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: transactions
+#
+#  id           :integer          not null, primary key
+#  amount       :integer
+#  description  :string
+#  process_time :datetime
+#  user_id      :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+# Indexes
+#
+#  index_transactions_on_user_id  (user_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1
+  description: MyString
+  process_time: 2017-06-05 21:06:14
+  user: one
+
+two:
+  amount: 1
+  description: MyString
+  process_time: 2017-06-05 21:06:14
+  user: two
