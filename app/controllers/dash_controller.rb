@@ -1,4 +1,5 @@
 class DashController < ApplicationController
+  before_action :filter_admin, only: [:make_transaction, :create_transaction]
   def index
     Time.zone="America/Los_Angeles"
     @transaction = Transaction.all
@@ -47,5 +48,11 @@ class DashController < ApplicationController
     tp = params.require(:transaction).permit(:amount,:description)
     tp[:user_id] = user_id
     tp
+  end
+
+  def filter_admin
+    unless current_user.admin
+      redirect_to :dash_index
+    end
   end
 end

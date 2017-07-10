@@ -17,6 +17,7 @@
 #  updated_at             :datetime         not null
 #  name                   :string
 #  hamsterbux             :integer          default("0")
+#  admin                  :boolean
 #
 # Indexes
 #

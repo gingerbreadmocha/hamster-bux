@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170627035240) do
+ActiveRecord::Schema.define(version: 20170710004231) do
 
   create_table "coupons", force: :cascade do |t|
     t.boolean "used"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20170627035240) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.integer "hamsterbux", default: 0
+    t.boolean "admin"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
