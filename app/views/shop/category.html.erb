@@ -7,7 +7,7 @@
           <div style="width: 100px; height: 100px; margin: 10px;"><%= image_tag item.picture, style: 'max-height: 100%; max-width: 100%' %></div>
           <div style="margin-bottom: 10px; display: flex;  ">
             price: <%= item.price %><%= image_tag 'seed.png', size: '25', style: "margin-left: 10px;" %></div>
-          <button type="button" class="btn btn-warning" style="margin-bottom: 10px">Buy</button>
+          <%= link_to 'buy', buy_item_path({item_id: item.id}), method: :post, class: 'btn btn-warning btn-lg', style: 'justify-content: center;' %>
           <button type="button" class="btn btn-danger" style="margin-bottom:10px;">Add to wish list</button>
         </div>
     <% end %>

@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: coupons
+#
+#  id           :integer          not null, primary key
+#  used         :boolean
+#  user_id      :integer
+#  shop_item_id :integer
+#  code         :string
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+# Indexes
+#
+#  index_coupons_on_shop_item_id  (shop_item_id)
+#  index_coupons_on_user_id       (user_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  used: false
+  user: 
+  item: one
+  code: MyString
+
+two:
+  used: false
+  user: 
+  item: two
+  code: MyString

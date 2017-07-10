@@ -1,0 +1,13 @@
+<div class="main-stuff">
+  <h2>coupons</h2>
+</div>
+
+<% @coupons.each do |coupon| %>
+    <div class="coupon">
+      <div class="coupon-container">
+        <div class = "coupon-name"><b><%= coupon.shop_item.name %></b></div>
+        <div class = "coupon-code"><%= coupon.code %></div>
+        <div class = "coupon-pic"><%= image_tag coupon.shop_item.picture, style: 'max-height: 50px; max-width: 50px' %></div>
+      </div>
+    </div>
+<% end %>
