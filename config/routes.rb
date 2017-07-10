@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   authenticate :user do
   get '/dash', to: 'dash#index', as: :dash_index
 
-  get '/dash/gift', to: 'dash#make_transaction', as: :dash_transaction
+  get '/dash/create-transaction', to: 'dash#make_transaction', as: :dash_transaction
 
-  get '/dash/send', to: 'dash#gift_transaction', as: :dash_send_transaction
+  get '/dash/gift', to: 'dash#gift_transaction', as: :dash_send_transaction
 
   post '/dash/transaction', to: 'dash#create_transaction', as: :create_transaction
 

@@ -34,5 +34,8 @@
   <%= link_to 'Shop', shop_index_path, class: 'shop-button btn btn-primary btn-lg' %>
   <button type="button" class="btn btn-secondary btn-lg">Earn Hamsterbux</button>
   <%= link_to 'Gift', dash_send_transaction_path, class: 'gift-button btn btn-primary btn-lg' %>
+  <% if current_user.admin%>
+    <%= link_to 'Give Hamsterbux', dash_transaction_path, class: 'shop-button btn btn-secondary btn-lg' %>
+  <% end %>
 </div>
 
