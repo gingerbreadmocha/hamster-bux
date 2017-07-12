@@ -21,6 +21,9 @@ Rails.application.routes.draw do
   get '/shop/:name', to: 'shop#category', as: :category_show
 
   get '/coupon', to: 'coupon#index', as: :coupon_index
+
+    resources :wishlist, only: [:index, :create, :destroy]
+
   end
 
   root 'welcome#index'

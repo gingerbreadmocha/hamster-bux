@@ -28,4 +28,6 @@ class ShopController < ApplicationController
 
     redirect_to :dash_index
   end
+
+
 end

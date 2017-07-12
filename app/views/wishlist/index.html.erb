@@ -1,0 +1,15 @@
+<div class="main-title">
+  <h2>wishlist</h2>
+</div>
+
+<% @wishtems.each do |wishtem| %>
+    <div class="wishtem">
+      <div class="wishtem-container">
+        <div class = "wishtem-name"><b><%= wishtem.shop_item.name %></b></div>
+        <div class = "wishtem-pic"><%= image_tag wishtem.shop_item.picture, style: 'max-height: 50px; max-width: 50px' %></div>
+        <div>
+          <%= link_to 'delete', wishlist_path(wishtem), method: :delete, class: 'welcome-button btn btn-secondary btn-lg', style: 'justify-content: center;' %>
+        </div>
+      </div>
+    </div>
+<% end %>

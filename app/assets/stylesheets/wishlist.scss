@@ -1,0 +1,55 @@
+// Place all the styles related to the Wishlist controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-title{
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.wishtem{
+  background-color: #5bc0de;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-color: #FFA500;
+  border-style: solid;
+  border-radius: 10px;
+  border-margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+
+.wishtem-container{
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  height: 100px;
+  justify-content: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.wishtem-name{
+  align-items: center;
+  display: flex;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.wishtem-pic{
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  margin-right: 20px;
+}
