@@ -58,3 +58,5 @@ gem 'devise', '4.3.0'
 
 gem 'annotate'
 
+gem 'pg'
+

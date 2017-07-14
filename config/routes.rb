@@ -22,6 +22,10 @@ Rails.application.routes.draw do
 
   get '/coupon', to: 'coupon#index', as: :coupon_index
 
+  get '/coupon/redeem', to: 'coupon#redeem', as: :coupon_redemption
+
+  patch '/coupon/redemption', to: 'coupon#redeem_coupon', as: :redeem_coupon
+
     resources :wishlist, only: [:index, :create, :destroy]
 
   end
