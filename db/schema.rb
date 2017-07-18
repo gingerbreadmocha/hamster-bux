@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170710013908) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "coupons", force: :cascade do |t|
     t.boolean "used"
     t.integer "user_id"
