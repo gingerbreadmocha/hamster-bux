@@ -12,10 +12,10 @@ default: &default
    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
    username: potato@potato.com
    password: potato123
-#default: &default
-#  adapter: sqlite3
-#  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-#  timeout: 5000
+default: &sqlite
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 development:
   <<: *default
