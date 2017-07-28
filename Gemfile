@@ -62,3 +62,4 @@ gem 'annotate'
 
 gem 'pg'
 
+gem 'jquery-rails'

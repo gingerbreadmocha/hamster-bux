@@ -20,6 +20,12 @@ Rails.application.routes.draw do
 
   get '/shop/:name', to: 'shop#category', as: :category_show
 
+  get '/gacha', to: 'gacha#index', as: :gacha_index
+
+  post '/gacha', to: 'gacha#gacha', as: :roll_gacha
+
+  get '/zashuu', to: 'zashuu#index', as: :zashuu_page
+
   get '/coupon', to: 'coupon#index', as: :coupon_index
 
   get '/coupon/redeem', to: 'coupon#redeem', as: :coupon_redemption
